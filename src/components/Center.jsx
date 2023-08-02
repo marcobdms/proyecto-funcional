@@ -1,10 +1,8 @@
 import React, { useEffect } from 'react';
 import '../../src/input.css';
 import $ from 'jquery';
+import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFileArrowDown } from '@fortawesome/free-solid-svg-icons';
-
-
 
 const Navbar = () => {
   useEffect(() => {
@@ -23,7 +21,7 @@ const Navbar = () => {
         <img src="foto-main.png" alt="" width='350' className='rounded-full filter drop-shadow-lg' id="profile-img" style={{ display: 'none' }} />
       </div>
         <div>
-            <FontAwesomeIcon icon="fa-solid fa-angle-down" style={{color: "#ffffff",}} />   
+            <FontAwesomeIcon icon={faAngleDown} style={{ color: 'white' }} />
         </div>
     </div>
   );
