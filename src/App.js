@@ -1,14 +1,16 @@
 import './input.css';
 import Navbar from './components/Navbar';
 import Center from './components/Center';
-import Head from './components/Head';
+import Carrusel from './components/Carrusel';
 
 function App() {
+
   return (
     <div>
       <Navbar />
       <Center />
-      <Head />
+      <br></br>
+      <Carrusel />
     </div>
   );
 }
