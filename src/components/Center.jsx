@@ -2,6 +2,9 @@ import React, { useEffect } from "react";
 import "../../src/input.css";
 import $ from "jquery";
 import { MdOutlineKeyboardArrowDown, MdOutlineKeyboardArrowRight } from "react-icons/md";
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { HiOutlineMail } from "react-icons/hi";
+import { BsFillPersonLinesFill } from 'react-icons/bs';
 
 const Center = () => {
   useEffect(() => {
@@ -12,12 +15,42 @@ const Center = () => {
     $(".animate-me")
       .css({ opacity: 0, bottom: "-20px" })
       .animate({ opacity: 1, bottom: 0, translateY: -10 }, "slow");
-    $('.animate-them')
-    .css({})
   }, []);
 
   return (
-    <div name="home" className="">
+    <div name="home" className="relative">
+      <div className="sm:block md:hidden lg:hidden xl:block mt-32 absolute "
+        >
+          <ul className="space-y-8">
+            <li className="flex justify-between items-center h-1/4 px-4">
+              <a
+                href="#"
+                className="flex justify-between items-center w-full text-3xl"
+              >
+                <>
+                  {" "}
+                  <FaLinkedin />
+                </>
+              </a>
+            </li>
+            <li className="flex justify-between items-center h-1/4 px-4 ml">
+              <a
+                href="#"
+                className="flex justify-between items-center w-full text-3xl"
+              >
+                <>
+                  {" "}
+                  <FaGithub />
+                </>
+              </a>
+            </li>
+            <li className="flex justify-between items-center h-1/4 px-4 ml">
+              <a href="#" className="flex justify-between items-center w-full">
+                <img src="hackthebox.svg" alt="" width={30} />
+              </a>
+            </li>
+          </ul>
+        </div>
       <div
         className="max-w-screen-lg mx-auto flex 
         flex-col items-center justify-center
@@ -33,10 +66,10 @@ const Center = () => {
             id="profile-img"
           />
         </div>
-        
+
         <div className="mb-1 pl-9 flex flex-col justify-center drop-shadow-lg animate-me mt-16">
           <h2 className="text-4xl sm:text-7xl font-bold">
-            I'am a Junior Programmer with cybersecurity skills.
+            I'm a Junior Programmer with cybersecurity skills.
           </h2>
 
           <p className="text-gray-500 py-4 animate-me">
