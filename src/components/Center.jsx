@@ -19,7 +19,7 @@ const Center = () => {
 
   return (
     <div name="home" className="relative">
-      <div className="sm:block md:hidden lg:hidden xl:block mt-32 absolute "
+      <div className="sm:block md:hidden lg:hidden xl:block mt-16 absolute"
         >
           <ul className="space-y-8">
             <li className="flex justify-between items-center h-1/4 px-4">
@@ -54,7 +54,7 @@ const Center = () => {
       <div
         className="max-w-screen-lg mx-auto flex 
         flex-col items-center justify-center
-        px-4 md:flex-row mt-16"
+        px-4 md:flex-row mt-10"
       >
 
         <div className="drop-shadow-lg w-50">
@@ -62,7 +62,7 @@ const Center = () => {
             src="foto-main.png"
             alt=""
             className="rounded-full mx-auto w-2/3 
-            md:w-full drop-shadow-lg"
+            md:w-full drop-shadow-lg sm:w-10"
             id="profile-img"
           />
         </div>
