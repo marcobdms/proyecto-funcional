@@ -11,6 +11,11 @@ function App() {
       <Navbar />
       <Center />
       <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
       <Carrusel />
     </div>
   );

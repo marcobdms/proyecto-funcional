@@ -8,7 +8,7 @@ const Card = () => {
     <div className="card1
       bg-white rounded-lg overflow-hidden shadow-xl mb-32"
       style={{ width: '1300px', height: '800px' }}>
-        <div className="flex justify-between p-12 mt-8">
+        <div className="flex justify-center items-center p-12 mt-8">
         <img
         src="imagenuno.jpg"
         alt="bash"

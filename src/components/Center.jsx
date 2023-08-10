@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
 import "../../src/input.css";
 import $ from "jquery";
-import { MdOutlineKeyboardArrowDown, MdOutlineKeyboardArrowRight } from "react-icons/md";
+import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import { HiOutlineMail } from "react-icons/hi";
-import { BsFillPersonLinesFill } from 'react-icons/bs';
+// import { HiOutlineMail } from "react-icons/hi";
+// import { BsFillPersonLinesFill } from 'react-icons/bs';
 
 const Center = () => {
   useEffect(() => {
@@ -62,7 +62,7 @@ const Center = () => {
             src="foto-main.png"
             alt=""
             className="rounded-full mx-auto w-2/3 
-            md:w-full drop-shadow-lg sm:w-10"
+            md:w-full drop-shadow-lg"
             id="profile-img"
           />
         </div>
