@@ -3,17 +3,17 @@ import React from "react";
 import '../../src/input.css'
 const Card = () => {
   return (
-  
-  <div className="flex justify-center items-center mt-12">
-    <div className="card1
-      bg-white rounded-lg overflow-hidden shadow-xl mb-32"
-      style={{ height: '400px' }}>
-        <div className="flex mt-12 justify-center">
+
+    <div className="flex justify-center items-center mt-5">
+      <div className="card1 bg-white rounded-lg overflow-hidden shadow-xl mb-24 p-9"
+        style={{ maxWidth: '80%' }}>
+        <div className="">
           <h2 className="text-4xl sm:text-7xl font-bold drop-shadow-lg">
-            Most Used Lenguages
+            Most Used Lenguages:
           </h2>
         </div>
-        <div className="flex flex-col items-center space-y-4 p-20 md:flex-row md:space-x-12">
+          <div className="flex justify-between space-x-2 items-center space-y-4 p-20 md:space-y-0 md:flex-row md:justify-between">
+            <div className="flex flex-col items-center space-y-4 md:w-1/2">
               <img
                 src="bash.png"
                 alt="bash"
@@ -29,6 +29,8 @@ const Card = () => {
                 alt="nodejs"
                 className="w-16 h-16 md:w-32 md:h-32 rounded-xl drop-shadow-xl"
               />
+            </div>
+            <div className="flex flex-col items-center space-y-4 md:w-1/2">
               <img
                 src="post.png"
                 alt="post"
@@ -45,8 +47,9 @@ const Card = () => {
                 className="w-16 h-16 md:w-32 md:h-32 rounded-xl drop-shadow-xl"
               />
             </div>
+          </div>
+      </div>
     </div>
-  </div>
 
 
   );

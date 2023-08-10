@@ -2,7 +2,10 @@ import './input.css';
 import Navbar from './components/Navbar';
 import Center from './components/Center';
 import Carrusel from './components/Carrusel';
-// import Social from './components/Social';
+import AboutMe from './components/AboutMe';
+import HTB from './components/HTB';
+import { MdOutlineKeyboardArrowDown } from "react-icons/md";
+
 
 function App() {
 
@@ -13,10 +16,15 @@ function App() {
       <br></br>
       <br></br>
       <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
+      <AboutMe />
+      <div className='flex justify-center items-center'>
+        <MdOutlineKeyboardArrowDown className="arrowdown1" size={50} />
+      </div>
       <Carrusel />
+      <div className='flex justify-center items-center'>
+      <MdOutlineKeyboardArrowDown className="arrowdown2" size={50} />
+      </div>
+      <HTB />
     </div>
   );
 }
