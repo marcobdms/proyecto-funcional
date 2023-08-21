@@ -8,7 +8,6 @@ import { FaTimes } from 'react-icons/fa';
 
 const Navbar = () => {
 
-    
     const [nav, setNav] = useState(false);
 
     return (
@@ -43,17 +42,20 @@ const Navbar = () => {
                 </ul>
 
                     <div onClick={() => setNav(!nav)} className='cursor-pointer pr-4 z-10 md:hidden'>
-                        {nav ? <FaTimes size={30} style={{ color: 'white'}}/> : <FaBars size={30} className='white-icon' />}
+                        {nav ? <FaTimes size={30} style={{ color: 'white', zIndex: 1 }}/> : <FaBars size={30} className='white-icon' />}
                     </div>
 
                 {nav && (
 
                     <ul className='flex flex-col jusitify-center 
                         items-center absolute top-0 left-0 w-full h-screen 
-                        bg-gradient-to-b from-black to-gray-800 text-gray-500'>
+                        bg-gradient-to-b from-black to-gray-800 text-gray-500' style={{ zIndex: 1 }}>
                         <li className='px-4 cursor-pointer capitalize py-5 text-4xl text-white hover:text-purple-600'>HOME</li>
+                        <br /><br /><br />
                         <li className='px-4 cursor-pointer capitalize py-5 text-4xl text-white hover:text-purple-600'>LENGUAGES</li>
+                        <br /><br /><br />
                         <li className='px-4 cursor-pointer capitalize py-5 text-4xl text-white hover:text-purple-600'>CYBERSECUTIRY</li>
+                        <br /><br /><br />
                         <li>
                             <button className="bg-green-500 hover:bg-green-600 text-white 
                                 font-semibold px-3 py-5 rounded text-4xl mt-4
