@@ -3,8 +3,6 @@ import "../../src/input.css";
 import $ from "jquery";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
-// import { HiOutlineMail } from "react-icons/hi";
-// import { BsFillPersonLinesFill } from 'react-icons/bs';
 
 const Center = () => {
   useEffect(() => {
@@ -59,7 +57,7 @@ const Center = () => {
 
         <div className="drop-shadow-lg w-50">
           <img
-            src="foto-main.png"
+            src="camara.jpg"
             alt=""
             className="rounded-full mx-auto w-2/3 
             md:w-full drop-shadow-lg"
